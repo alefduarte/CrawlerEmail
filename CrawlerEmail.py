@@ -108,7 +108,7 @@ if __name__ == '__main__':
     try:
         input = raw_input
     except NameError:
-        print(NameError.message)
+        pass
     URL = input(u"Digite o link no formato http://algumacoisa.com\n")
     if not URL.startswith("http") or not URL.startswith("https"):
         URL = "https://" + URL
